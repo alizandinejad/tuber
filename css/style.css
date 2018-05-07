@@ -1,11 +1,20 @@
 /*
-	NAVBAR
+  GENERAL
+*/
+
+.hidden {
+  display: none;
+}
+
+
+/*
+  NAVBAR
 */
 
 .navbar-brand {
   color: #ff3547 !important;
   font-weight: 900;
-  font-size: 1.5rem;
+  c
 }
 
 .navbar.navbar-dark.sticky-top {
@@ -17,9 +26,34 @@
   right: 0;
 }
 
+/*
+  HOMEPAGE SEARCH
+*/
+
+.homepage {
+  min-height: 100vh;
+  align-items: center;
+}
+
+.homepage-form {
+  width: 100%;
+}
+
+.homepage-logo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: #ff3547;
+}
+
+.homepage-subtitle {
+  text-align: center;
+  font-weight: 400;
+  color: #999;
+}
 
 /*
-	RESULT CARDS
+  RESULT CARDS
 */
 
 .cards {

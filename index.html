@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
-  <!-- Custom styles -->
-  <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-  <nav role="navigation" class="navbar navbar-dark sticky-top">
-    <a class="navbar-brand" href="#">Tuber</a>
-    <form action="#" class="form-inline my-2 my-lg-0 ml-auto" id="js-search-form">
-      <label for="query"></label>
-      <input class="form-control" type="search" placeholder="Search YouTube" aria-label="Search" id="js-query">
-      <button class="btn btn-danger btn-md my-2 my-sm-0 ml-3" type="submit">Search</button>
-    </form>
-  </nav>
-  <main role="main" id="top-section">
-    <section role="region" class="container">
-      <div class="row" class="search-results" id="js-search-results">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav role="navigation" class="navbar navbar-dark sticky-top hidden js-search-form">
+      <a class="navbar-brand" href="#">Tuber</a>
+      <form action="#" class="form-inline my-2 my-lg-0 ml-auto js-search-form">
+        <label for="query"></label>
+        <input class="form-control" type="search" placeholder="Search YouTube" aria-label="Search" id="js-query">
+        <button class="btn btn-danger btn-md my-2 my-sm-0 ml-3" type="submit">Search</button>
+      </form>
+    </nav>
+    <!-- INITIAL SEARCH FORM (HIDDEN AFTER SUBMIT) -->
+    <section role="region" class="homepage d-flex align-middle container">
+      <div class="row homepage-form">
+        <div class="col-md-12">
+          <header>
+            <h1 class="homepage-logo">Tuber</h1>
+            <p class="homepage-subtitle">Search YouTube Videos, right here.</p>
+          </header>
+          <form action="#" class="md-form-danger js-search-form">
+            <label for="query"></label>
+            <input class="form-control" type="search" placeholder="Search YouTube" aria-label="Search" id="js-query">
+          </form>
+        </div>
       </div>
     </section>
-  </main>
-  <footer>
-    <div class="fixed-action-btn smooth-scroll">
-      <a href="#top-section" class="btn-floating btn-large btn-danger">
-        <i class="fa fa-arrow-up"></i>
-      </a>
-    </div>
-  </footer>
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Custom Scripts -->
-  <script type="text/javascript" src="js/app.js"></script>
-</body>
-
+    <!-- END INTITIAL SEARCH FORM -->
+    <main role="main" id="top-section">
+      <section role="region" class="container">
+        <div class="row" class="search-results" id="js-search-results">
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="fixed-action-btn smooth-scroll">
+        <a href="#top-section" class="btn-floating btn-large btn-danger">
+          <i class="fa fa-arrow-up"></i>
+        </a>
+      </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
 </html>

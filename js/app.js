@@ -50,16 +50,31 @@ const tube = {
     $('#js-search-results').html(results);
   },
   submit: () => {
-    $('#js-search-form').submit(event => {
-      event.preventDefault();
-
+    $('.js-search-form').submit(event => {
+      view.showNav();
+      view.hideSearch();
       const queryTarget = $(event.currentTarget).find('#js-query');
       const query = queryTarget.val();
 
       queryTarget.val("");
       tube.getData(query, tube.display);
     });
+  },
+};
+
+const view = {
+  showNav: () => {
+    $('.navbar').removeClass('hidden');
+  },
+  hideSearch: () => {
+    $('.homepage').remove();
+  },
+  focus: () => {
+  	$('input').focus();
   }
 };
 
-$(tube.submit);
+$(() => {
+	$(view.focus())
+  $(tube.submit);
+});
