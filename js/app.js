@@ -37,7 +37,7 @@ const tube = {
 			      <h4 class="card-title"><strong><a href="${videoUrl}" target="_blank">${result.snippet.title.substring(0, 40)}...</a></strong></h4>
 			      <!-- Subtitle -->
 			      <h5 class="pb-2"><strong>More from <a href="${channelUrl}" target="_blank">${result.snippet.channelTitle}</a></strong></h5>
-			      <a href="${videoUrl}" target="_blank" class="btn btn-danger btn-rounded watch-button">Watch Video</a>
+			      <a href="${videoUrl}" target="_blank" class="btn btn-default btn-rounded watch-button">Watch Video</a>
 			    </header>
 			  </div>
 			  <!-- Card Wider -->

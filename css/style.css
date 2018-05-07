@@ -10,6 +10,11 @@ body {
   display: none;
 }
 
+.btn {
+  background-color: #212121!important;
+  color: #fff!important;
+}
+
 
 /*
   NAVBAR
