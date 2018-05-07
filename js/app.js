@@ -5,7 +5,7 @@ const tube = {
       url: tube.URL,
       data: {
         part: 'snippet',
-        maxResults: 12,
+        maxResults: 18,
         key: 'AIzaSyCp0YOtbMRwglaTChGdQ9IxgwrOyxxCrpI',
         q: `${searchTerm}`,
       },
