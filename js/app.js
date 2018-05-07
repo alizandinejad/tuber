@@ -51,8 +51,8 @@ const tube = {
   },
   submit: () => {
     $('.js-search-form').submit(event => {
-      view.showNav();
-      view.hideSearch();
+      view.changeView();
+
       const queryTarget = $(event.currentTarget).find('#js-query');
       const query = queryTarget.val();
 
@@ -63,10 +63,9 @@ const tube = {
 };
 
 const view = {
-  showNav: () => {
+  changeView: () => {
     $('.navbar').removeClass('hidden');
-  },
-  hideSearch: () => {
+    $('.fixed-action-btn').removeClass('hidden');
     $('.homepage').remove();
   },
   focus: () => {
@@ -75,6 +74,6 @@ const view = {
 };
 
 $(() => {
-	$(view.focus())
+	$(view.focus)
   $(tube.submit);
 });
