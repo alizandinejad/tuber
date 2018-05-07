@@ -17,19 +17,20 @@
 </head>
 
 <body>
-<main>
-  <h1>Search YouTube</h1>
-  <form action="#" id="js-search-form">
-    <label for="query"></label>
-    <input type="text" id="js-query">
-    <button type="submit"></button>
-  </form>
-  <h2>Results</h2>
-  <div class="container">
-    <div class="row" id="js-search-results">
+  <nav role="navigation" class="navbar navbar-dark danger-color sticky-top">
+    <a class="navbar-brand" href="#">Tuber</a>
+    <form action="#" class="form-inline my-2 my-lg-0 ml-auto" id="js-search-form">
+      <label for="query"></label>
+      <input class="form-control" type="search" placeholder="Search YouTube" aria-label="Search" id="js-query">
+      <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Search</button>
+    </form>
+  </nav>
+  <main role="main">
+    <div class="container">
+      <div class="row" class="search-results" id="js-search-results">
+      </div>
     </div>
-  </div>
-</main>
+  </main>
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>

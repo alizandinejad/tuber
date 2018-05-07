@@ -1,1 +1,26 @@
-/* Your custom styles */
+/*
+	RESULT CARDS
+*/
+
+.cards {
+  margin: 40px 0;
+}
+
+.view.overlay {
+  max-height: 197px;
+}
+
+.watch-button {
+  margin-top: -3px;
+  z-index: 1;
+}
+
+.card-title {
+  min-height: 45px;
+  font-size: 18px;
+}
+
+.pb-2 {
+  min-height: 35px;
+  font-size: 14px;
+}

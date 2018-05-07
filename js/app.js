@@ -21,23 +21,27 @@ const tube = {
     const imageUrl = `${result.snippet.thumbnails.medium.url}`;
 
     return `
-    <div class = "col-md-4 col-sm-12">
-      <div class="demo-card-square mdl-card mdl-shadow--2dp">
-            <a class="js-result-name" href="${videoUrl}" target="_blank"><img src="${imageUrl}"></a>
-        <div class="mdl-card__title mdl-card--expand">
-          <h2 class="mdl-card__title-text">${result.snippet.title}</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Aenan convallis.
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect js-result-name" href="${videoUrl}">
-            Watch Video
-          </a>
-        </div>
-      </div>
-    </div>
+			<div class="col-md-4 cards">
+			  <!-- Card Wider -->
+			  <div class="card card-cascade wider">
+			    <!-- Card image -->
+			    <div class="view overlay">
+			      <img class="card-img-top" src="${imageUrl}" alt="${result.snippet.title}">
+			      <a href="${videoUrl}" target="_blank" rel="nofollow">
+			        <div class="mask rgba-white-slight"></div>
+			      </a>
+			    </div>
+			    <!-- Card content -->
+			    <div class="card-body text-center">
+			      <!-- Title -->
+			      <h4 class="card-title"><strong><a href="${videoUrl}" target="_blank">${result.snippet.title.substring(0, 40)}...</a></strong></h4>
+			      <!-- Subtitle -->
+			      <h5 class="pb-2"><strong>More from <a href="${channelUrl}" target="_blank">${result.snippet.channelTitle}</a></strong></h5>
+			    </div>
+			    <a href="${videoUrl}" target="_blank" class="btn btn-danger watch-button">Watch Video</a>
+			  </div>
+			  <!-- Card Wider -->
+			</div>
   `;
   },
   display: data => {
