@@ -17,20 +17,27 @@
 </head>
 
 <body>
-  <nav role="navigation" class="navbar navbar-dark danger-color sticky-top">
+  <nav role="navigation" class="navbar navbar-dark sticky-top">
     <a class="navbar-brand" href="#">Tuber</a>
     <form action="#" class="form-inline my-2 my-lg-0 ml-auto" id="js-search-form">
       <label for="query"></label>
       <input class="form-control" type="search" placeholder="Search YouTube" aria-label="Search" id="js-query">
-      <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Search</button>
+      <button class="btn btn-danger btn-md my-2 my-sm-0 ml-3" type="submit">Search</button>
     </form>
   </nav>
-  <main role="main">
-    <div class="container">
+  <main role="main" id="top-section">
+    <section role="region" class="container">
       <div class="row" class="search-results" id="js-search-results">
       </div>
-    </div>
+    </section>
   </main>
+  <footer>
+    <div class="fixed-action-btn smooth-scroll">
+      <a href="#top-section" class="btn-floating btn-large btn-danger">
+        <i class="fa fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>

@@ -23,7 +23,7 @@ const tube = {
     return `
 			<div class="col-md-4 cards">
 			  <!-- Card Wider -->
-			  <div class="card card-cascade wider">
+			  <div role="region" class="card card-cascade wider">
 			    <!-- Card image -->
 			    <div class="view overlay">
 			      <img class="card-img-top" src="${imageUrl}" alt="${result.snippet.title}">
@@ -32,13 +32,14 @@ const tube = {
 			      </a>
 			    </div>
 			    <!-- Card content -->
-			    <div class="card-body text-center">
+			    <header class="card-body text-center">
 			      <!-- Title -->
 			      <h4 class="card-title"><strong><a href="${videoUrl}" target="_blank">${result.snippet.title.substring(0, 40)}...</a></strong></h4>
 			      <!-- Subtitle -->
 			      <h5 class="pb-2"><strong>More from <a href="${channelUrl}" target="_blank">${result.snippet.channelTitle}</a></strong></h5>
-			    </div>
-			    <a href="${videoUrl}" target="_blank" class="btn btn-danger watch-button">Watch Video</a>
+			      <a href="${videoUrl}" target="_blank" class="btn btn-danger btn-rounded watch-button">Watch Video</a>
+			    </header>
+			    
 			  </div>
 			  <!-- Card Wider -->
 			</div>
@@ -51,9 +52,10 @@ const tube = {
   submit: () => {
     $('#js-search-form').submit(event => {
       event.preventDefault();
+
       const queryTarget = $(event.currentTarget).find('#js-query');
       const query = queryTarget.val();
-      // clear out the input
+
       queryTarget.val("");
       tube.getData(query, tube.display);
     });

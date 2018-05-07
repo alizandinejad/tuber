@@ -1,4 +1,24 @@
 /*
+	NAVBAR
+*/
+
+.navbar-brand {
+  color: #ff3547 !important;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.navbar.navbar-dark.sticky-top {
+  background: white;
+}
+
+.fixed-action-btn {
+  bottom: 0;
+  right: 0;
+}
+
+
+/*
 	RESULT CARDS
 */
 
@@ -8,11 +28,6 @@
 
 .view.overlay {
   max-height: 197px;
-}
-
-.watch-button {
-  margin-top: -3px;
-  z-index: 1;
 }
 
 .card-title {
