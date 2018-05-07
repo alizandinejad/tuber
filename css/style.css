@@ -63,8 +63,8 @@ body {
   margin: 40px 0;
 }
 
-.view.overlay {
-  max-height: 197px;
+.overlay {
+  max-height: 197px !important;
 }
 
 .card-title {
