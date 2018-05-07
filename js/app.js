@@ -39,11 +39,10 @@ const tube = {
 			      <h5 class="pb-2"><strong>More from <a href="${channelUrl}" target="_blank">${result.snippet.channelTitle}</a></strong></h5>
 			      <a href="${videoUrl}" target="_blank" class="btn btn-danger btn-rounded watch-button">Watch Video</a>
 			    </header>
-			    
 			  </div>
 			  <!-- Card Wider -->
 			</div>
-  `;
+  	`;
   },
   display: data => {
     const results = data.items.map((item, index) => tube.render(item));
@@ -59,7 +58,7 @@ const tube = {
       queryTarget.val("");
       tube.getData(query, tube.display);
     });
-  },
+  }
 };
 
 const view = {

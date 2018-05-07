@@ -2,6 +2,10 @@
   GENERAL
 */
 
+body {
+  background: whitesmoke;
+}
+
 .hidden {
   display: none;
 }
@@ -31,7 +35,7 @@
 */
 
 .homepage {
-  min-height: 100vh;
+  min-height: 90vh;
   align-items: center;
 }
 
@@ -49,7 +53,7 @@
 .homepage-subtitle {
   text-align: center;
   font-weight: 400;
-  color: #999;
+  color: #666;
 }
 
 /*
