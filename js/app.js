@@ -52,7 +52,7 @@ const tube = {
     $('.js-search-form').submit(event => {
       view.changeView();
 
-      const queryTarget = $(event.currentTarget).find('#js-query');
+      const queryTarget = $(event.currentTarget).find('.js-query');
       const query = queryTarget.val();
 
       queryTarget.val("");
