@@ -18,7 +18,6 @@ body {
 .navbar-brand {
   color: #ff3547 !important;
   font-weight: 900;
-  c
 }
 
 .navbar.navbar-dark.sticky-top {
@@ -53,7 +52,7 @@ body {
 .homepage-subtitle {
   text-align: center;
   font-weight: 400;
-  color: #666;
+  color: black;
 }
 
 /*
